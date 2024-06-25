@@ -685,6 +685,7 @@ function library:Introduction()
     local introduction = Instance.new("ScreenGui")
     local edge = Instance.new("Frame")
     local edgeCorner = Instance.new("UICorner")
+    local edgeCorner2 = Instance.new("UICorner")
     local background = Instance.new("Frame")
     local backgroundGradient = Instance.new("UIGradient")
     local backgroundCorner = Instance.new("UICorner")
@@ -773,6 +774,16 @@ function library:Introduction()
     hashLogo.Image = "http://www.roblox.com/asset/?id=18207301038"
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
+
+    
+    edgeCorner1.CornerRadius = UDim.new(0, 2)
+    edgeCorner1.Name = "edgeCorner"
+    edgeCorner1.Parent = hashLogo
+
+    local edges edgeCorner1:Clone()
+    edges.Name = "edges"
+    edges.CornerRadius = UDim.new(0, 2)
+    edges.Parent = xsxLogo
     
     xsx.Name = "xsx"
     xsx.Parent = background
